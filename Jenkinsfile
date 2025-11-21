@@ -14,6 +14,11 @@ pipeline {
     }
 
     stages {
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t express-app .'
+            }
+        }
         stage('Check Environment') {
             steps {
                 sh 'echo "Node version:" && node -v'
