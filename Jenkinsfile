@@ -1,7 +1,6 @@
 pipeline {
     agent any
 
-    ```
     environment {
         IMAGE_NAME = "express-app"
         CONTAINER_NAME = "express_app"
@@ -72,6 +71,4 @@ pipeline {
             echo "Pipeline failed. Check logs above."
         }
     }
-    ```
-
 }
