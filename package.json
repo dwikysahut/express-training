@@ -7,6 +7,7 @@
   },
   "dependencies": {
     "express": "^4.18.2",
-    "mssql": "^9.2.1"
+    "mssql": "^9.2.1",
+    "prom-client": "^15.1.3"
   }
 }
