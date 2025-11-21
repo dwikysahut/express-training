@@ -14,6 +14,14 @@ pipeline {
     }
 
     stages {
+        stage('Check Environment') {
+            steps {
+                sh 'echo "Node version:" && node -v'
+                sh 'echo "NPM version:" && npm -v'
+                sh 'echo "Docker version:" && docker --version'
+                sh 'echo "Hostname:" && hostname'
+            }
+        }
         stage('Clone Repository') {
             steps {
                 echo "Cloning repository..."
