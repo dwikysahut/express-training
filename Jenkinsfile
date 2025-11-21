@@ -12,7 +12,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "Cloning repository..."
-                git 'https://github.com/dwikysahut/express-training.git'
+                git branch: 'main', url: 'https://github.com/dwikysahut/express-training.git'
             }
         }
 
